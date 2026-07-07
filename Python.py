@@ -2,3 +2,7 @@
 
 name = input("What's your name? ")
 print("Hello, " + name)
+
+# Using escape characters to include quotes in the output
+
+print("Hello, \"friend\"")
