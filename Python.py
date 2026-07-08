@@ -3,12 +3,12 @@
 name = input("What's your name? ")
 
 # Remove white space from the str.
-name = name.strip()
+name = name.strip().title()
 
-#Capitalize the first letter of the name.
-name = name.capitalize()
+# Split the name into first and last name
+first, last = name.split(" ")
 
-print(f"Hello, {name}!")
+print(f"Hello, {first}")
 
 # Using escape characters to include quotes in the output
 
