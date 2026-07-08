@@ -11,5 +11,10 @@ first, last = name.split(" ")
 print(f"Hello, {first}")
 
 # Using escape characters to include quotes in the output
-
 print("Hello, \"friend\"")
+
+# Calculator 
+x = int(input ("Enter a number: "))
+y = int(input ("Enter a number: "))
+
+print(x + y)
