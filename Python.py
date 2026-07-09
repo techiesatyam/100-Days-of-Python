@@ -22,7 +22,7 @@ print(x + y)
 x = float(input("Enter number: "))
 y = float(input("Enter number: "))
 
-print(round(x + y))
+print(round(x + y, 2))
 
 # Subtraction Operator
 x = int(input("Enter a number: "))
@@ -30,3 +30,8 @@ y = int(input("Enter a number: "))
 
 print(x - y)
 
+# Multiplication Operator
+x = float(input("Enter a number: "))
+y = float(input("Enter a number: "))
+
+print(round(x * y, 2))
