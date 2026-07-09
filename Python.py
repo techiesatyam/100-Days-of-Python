@@ -35,3 +35,12 @@ x = float(input("Enter a number: "))
 y = float(input("Enter a number: "))
 
 print(round(x * y, 2))
+
+# Creating our own function to perform division operation
+def divide(x,y):
+    return x / y
+
+x = float(input("Enter a number: "))
+y = float(input("Enter a number: "))
+
+print(round(divide(x, y), 2))
