@@ -23,3 +23,10 @@ x = float(input("Enter number: "))
 y = float(input("Enter number: "))
 
 print(round(x + y))
+
+# Subtraction Operator
+x = int(input("Enter a number: "))
+y = int(input("Enter a number: "))
+
+print(x - y)
+
