@@ -11,3 +11,13 @@ elif x < y:
 
 else:
     print("x is equal to y")
+
+# Using or conditionals
+
+x = float(input(" Value of x: "))
+y = float(input(" Value of y: "))
+
+if x > y or x < y:
+    print("x is not equal to y")
+else:
+    print("x is equal to y")
