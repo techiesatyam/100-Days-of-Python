@@ -14,8 +14,8 @@ else:
 
 # Using or conditionals
 
-x = float(input(" Value of x: "))
-y = float(input(" Value of y: "))
+x = float(input("Value of x: "))
+y = float(input("Value of y: "))
 
 if x > y or x < y:
     print("x is not equal to y")
@@ -45,3 +45,19 @@ elif score >= 40 and score < 50:
     print("Grade: D")
 else:
     print("Grade: F-")
+
+# Using Boolean Conditionals to check if a number is even or odd
+def main():
+    n = int(input(" What's n? "))
+    if is_even(n):
+        print("Even no.")
+    else:
+        print("Odd no.")
+
+def is_even(n):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
+    
+main()
