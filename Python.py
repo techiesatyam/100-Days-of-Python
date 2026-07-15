@@ -44,3 +44,11 @@ x = float(input("Enter a number: "))
 y = float(input("Enter a number: "))
 
 print(round(divide(x, y), 2))
+
+#Creating a function which gretts user by thei name
+def main(name):
+    print("Hello,", name)
+    
+name = input("What's your good name? ")
+name = name.strip().title()
+main(name)
