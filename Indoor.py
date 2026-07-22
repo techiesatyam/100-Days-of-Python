@@ -9,6 +9,6 @@ Av(input("Say it here: "))
 # Playback speed
 def vi():
     Speed = input("")
-    Speed = Speed.replace(" ", "...")
+    Speed = Speed.replace(" ", "...").capitalize()
     print(f"{Speed}")
 vi()
