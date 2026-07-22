@@ -10,7 +10,4 @@ def cal(YOB, Year):
 
     print(f"Your age in {Year} year will be {Age} years old.")
 
-
-print("This is line 15")
 cal(Year = int(input("What's the year you want to know your age? ")), YOB = int(input("What's your birth year? ")))
-cal(int(input("What's your birth year? ")), int(input("What's the year you want to know your age? ")))
