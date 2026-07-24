@@ -28,36 +28,37 @@ if x == y:
 else:
     print("x is not equal to y")
 
-# Using and condition to assign students grade 
-score = int(input("Score: "))
-
-if score >= 90 and score <= 100:
-    print("Grade: A1")
-elif score >= 80 and score < 90:
-    print("Grade: A2")
-elif score >= 70 and score < 80:
-    print("Grade: B2")
-elif score >= 60 and score < 70:
-    print("Grade: C1")
-elif score >= 50 and score < 60:
-    print("Grade: C2")
-elif score >= 40 and score < 50:
-    print("Grade: D")
-else:
-    print("Grade: F-")
+# Defining a function to assign students grade on the basis of their score
+def Grade (score):
+    if score >= 90 and score <= 100:
+        print("Grade: A1")
+    elif score >= 80 and score < 90:
+        print("Grade: A2")
+    elif score >= 70 and score < 80:
+        print("Grade: B2")
+    elif score >= 60 and score < 70:
+        print("Grade: C1")
+    elif score >= 50 and score < 60:
+        print("Grade: C2")
+    elif score >= 40 and score < 50:
+        print("Grade: D")
+    elif score > 100 and score < 5:
+        print("Invalid Grade")
+    else:
+        print("Grade: F-")
+Grade(int(input("Score: ")))
 
 # Using Boolean Conditionals to check if a number is even or odd
-def main():
-    n = int(input(" What's n? "))
-    if is_even(n):
+def main(e):
+    if even(e):
         print("Even no.")
     else:
         print("Odd no.")
 
-def is_even(n):
-    if n % 2 == 0:
+def even(e):
+    if e % 2 == 0:
         return True
     else:
         return False
     
-main()
+main(int(input(" What's e? ")))
