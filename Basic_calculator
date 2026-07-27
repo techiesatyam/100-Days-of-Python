@@ -1,0 +1,19 @@
+def Vol():
+    Calculate = input("Expression: ")
+    x, y, z = Calculate.split()
+
+    x = int(x)
+    z = int(z)
+
+    if y == "+":
+        return(float(x + z))
+    elif y == "-":
+        return(float(x - z))
+    elif y == "*":
+        return(float(x * z))
+    elif y == "/":
+        return(float(x / z))
+    else:
+        return("Error: 404")
+
+print(Vol())
