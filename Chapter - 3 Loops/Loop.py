@@ -29,3 +29,13 @@ planets = ["Saturn", "Jupiter", "Mars", "Earth"]
 
 for i in range(len(planets)):
     print(i + 1, planets[i])
+
+# Dictionary loop
+fruits = {
+    "Apple": "Kashmiri",
+    "Mango": "Alphonso, Kesar",
+    "Guava": "Sardar",
+    "Lichi": "Chinese"
+}
+for f in fruits:
+    print(f, fruits[f], sep=": ")
