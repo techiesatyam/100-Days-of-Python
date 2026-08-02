@@ -39,3 +39,12 @@ fruits = {
 }
 for f in fruits:
     print(f, fruits[f], sep=": ")
+
+# Using for loop for multiple dictionaries.
+vegetables = [
+    {"name": "Potato", "type": "Root"},
+    {"name": "Spinach", "type": "Leafy"},
+    {"name": "Carrot", "type": "Root"}
+]
+for v in vegetables:
+    print(v["name"], v["type"], sep=": ", end="\n")
