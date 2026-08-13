@@ -1,14 +1,12 @@
 def ine():
-    x = get_int()
+    x = get_int("Enter a number: ")
     print(f"The result of division is: {x}")
 
-def get_int():
+def get_int(prompt):
     while True:
         try:
-            x = int(input("Enter a number: "))
+            return int(input(prompt))
         except ValueError:
-            print("Invalid input!\nPlease enter valid integers.")
-        else:
-            return x
+            pass
         
 ine()   
