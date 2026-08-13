@@ -1,11 +1,14 @@
-for i in range(4):
-    try:
-        x = int(input("Enter a number: "))
-        y = int(input("Enter another number: "))
-        result = x / y
-        print("The result of division is:", result)
-        break
+def ine():
+    x = get_int()
+    print(f"The result of division is: {x}")
 
-    except ValueError:
-        print("Invalid input! Please enter valid integers.")
-        continue
+def get_int():
+    while True:
+        try:
+            x = int(input("Enter a number: "))
+        except ValueError:
+            print("Invalid input!\nPlease enter valid integers.")
+        else:
+            return x
+        
+ine()   
