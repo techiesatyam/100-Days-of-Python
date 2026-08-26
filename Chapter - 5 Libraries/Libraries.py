@@ -21,3 +21,14 @@ print(mean)
 
 mode = statistics.mode([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11])
 print(mode)
+
+# Command line arguments
+import sys
+
+if len(sys.argv) < 2:
+    print("*minimum 4 letters required")
+elif len(sys.argv) > 2:
+    print("Too many arguments")
+else:
+    print("Hello, my name is ", sys.argv[1])
+    
