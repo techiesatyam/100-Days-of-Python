@@ -27,7 +27,7 @@ import sys
 
 if len(sys.argv) < 2:
     sys.exit("*minimum 4 letters required")
-elif len(sys.argv) > 2:
-    sys.exit("Too many arguments")
+for en in sys.argv:
+    print(f"Hello, my name is {en}")
 
 print("Hello, my name is ", sys.argv[1])
