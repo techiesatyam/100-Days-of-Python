@@ -1,13 +1,16 @@
 from calculator import cube
 
 def test_cube():
-    if cube(2) != 8:
-          print("Error!\n2 cubed is not 8.")
-  
-    if cube(45) != 91125:
-          print("Error!\n45 cubed is not 91125.")
-  
-    else:
-          print("All tests passed!")
+    try:
+        assert cube(2) == 8
+        print("Test passed!")
+    except AssertionError:
+        print("Sorry!\nTest Failed!")
+
+    try:
+        assert cube(3) == 27
+        print("Test passed!")
+    except AssertionError:
+        print("Sorry!\nTest Failed!")
 
 test_cube()
