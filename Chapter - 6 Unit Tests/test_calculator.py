@@ -1,16 +1,8 @@
 from calculator import cube
 
 def test_cube():
-    try:
-        assert cube(2) == 8
-        print("Test passed!")
-    except AssertionError:
-        print("Sorry!\nTest Failed!")
-
-    try:
-        assert cube(3) == 27
-        print("Test passed!")
-    except AssertionError:
-        print("Sorry!\nTest Failed!")
+    assert cube(2) == 8
+    assert cube(3) == 27
+    assert cube(4) == 64
 
 test_cube()
