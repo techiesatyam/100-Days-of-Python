@@ -1,13 +1,15 @@
-name = input("What's your name? ")
+def read_names():
+    names = []
+    with open("name.csv", "r") as file:
+        for line in file:
+            row = line.rstrip().split(",")
 
-file = open("name.txt", "a")
-file.write(f"{name}\n")
-file.close()
+        print("Reading:", row)
+        print("Length:", len(row))
 
-names = []
-with open("name.txt", "r") as file:
-    for line in file:
-        names.append(line.rstrip())
+        if len(row) == 2:
+            names.append(f"{row[0]} is in {row[1]}")
 
-for name in sorted(names):
-    print(f"Hello, {name}!") 
+    print("Final list:", names)
+
+    return names
